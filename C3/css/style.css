@@ -15,7 +15,6 @@ a{
     width: 1000px;
     height: 650px;
     display: flex;
-    margin: 0 auto;
 }
 
 
@@ -38,7 +37,7 @@ header {
     width: 180px;
     height: 25px;
     color: white;
-    background-color: #0551A6;
+    background-color: #8FEAFF;
 }
 .main-menu>li:hover {
     height: 100px;
@@ -69,73 +68,87 @@ header {
     height: 350px;
     overflow: hidden;
 }
+.slide ul {
+    display: flex;
+    animation: sl 9s infinite;
+}
+@keyframes sl {
+    0%{transform: translateX(-0px);}
+    33%{transform: translateX(-800px);}
+    66%{transform: translateX(-1600px);}
+    100%{transform: translateX(-2400px);}
+}
 .contents {
     width: 800px;
     height: 200px;
     display: flex;
 }
-.tab {
+.notice {
     width: 33%;
     height: 200px;
 }
-.tab h3 {
+.notice h3 {
     width: 100px;
     height: 25px;
     color: white;
     display: inline-block;
-    background-color: #0551A6;
+    background-color: #8FEAFF;
     text-align: center;
     border-radius: 5px 5px 0px 0px;
 }
-.tab-notice {
+.notice ul {
     width: 100%;
     height: 175px;
     border: 1px solid black;
 }
-.tab-notice li {
+.notice li {
     width: 100%;
     height: 25px;
     margin-top: 5px;
-    font-size: 10pt;
+    font-size: 9pt;
     border-bottom: 1px solid #aaa;
 }
-.tab-notice li:hover {
+.notice li:hover {
     background-color: #ccc;
 }
-.tab-gallery {
+.gallery {
+    width: 33%;
+    height: 200px;
+}
+.gallery h3 {
+    width: 100px;
+    height: 25px;
+    color: white;
+    display: inline-block;
+    background-color: #8FEAFF;
+    text-align: center;
+    border-radius: 5px 5px 0px 0px;
+}
+.gallery ul {
     width: 100%;
     height: 175px;
-    border: 1px solid black;
-    display: none;
-}
-.tab-gallery ul {
-    width: 100%;
-    height: 100%;
     align-items: center;
     justify-content: space-around;
     display: flex;
+    border: 1px solid black;
 }
-.tab-gallery li {
+.gallery li {
     width: 30%;
     height: 75px;
 }
-.tab-gallery li:hover img {
+.gallery li:hover img {
     scale: 1.05;
 }
-.tab-gallery img {
+.gallery img {
     width: 100%;
     height: 50px;
     transition: 0.3s;
 }
-.tab-gallery p {
+.gallery p {
     width: 100%;
     height: 25px;
     font-size: 11pt;
     text-align: center;
-}
-.banner {
-    width: 33%;
-    height: 200px;
 }
 .banner {
     width: 33%;
@@ -146,20 +159,20 @@ header {
     height: 25px;
     color: white;
     display: inline-block;
-    background-color: #0551A6;
+    background-color: #8FEAFF;
     text-align: center;
     border-radius: 5px 5px 0px 0px;
 }
 .banner img {
     width: 100%;
-    height: 175;
+    height: 175px;
 }
 .shortcut h3 {
     width: 100px;
     height: 25px;
     color: white;
     display: inline-block;
-    background-color: #0551A6;
+    background-color: #8FEAFF;
     text-align: center;
     border-radius: 5px 5px 0px 0px;
 }
@@ -212,7 +225,7 @@ footer {
 }
 .f-menu {
     width: 600px;
-    height: 50px;
+    height: 25px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -225,13 +238,12 @@ footer {
 }
 .f-menu li:hover {
     color: white;
-    background-color: #0551A6;
+    background-color: #8FEAFF;
 }
 .copyright {
     width: 600px;
-    height: 50px;
+    height: 75px;
     text-align: center;
-    padding-bottom: 5px;
 }
 .modal {
     width: 600px;
@@ -239,7 +251,7 @@ footer {
     background-color: #ccc;
     position: absolute;
     top: 26%;
-    left: 38%;
+    left: 15%;
     text-align: center;
     display: none;
 }

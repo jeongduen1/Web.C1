@@ -1,0 +1,244 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 1000px;
+    height: 650px;
+    display: flex;
+}
+
+
+
+header {
+    width: 200px;
+    height: 650px;
+}
+.logo1 {
+    width: 200px;
+    height: 100px;
+    padding-top: 20px;
+}
+.main-menu {
+    width: 180px;
+    margin: 0 auto;
+    text-align: center;
+}
+.main-menu>li {
+    width: 180px;
+    height: 25px;
+    color: white;
+    background-color: #0551A6;
+}
+.main-menu>li:hover {
+    height: 100px;
+}
+.sub-menu {
+    display: none;
+}
+.sub-menu li {
+    width: 170px;
+    height: 25px;
+    color: black;
+    background-color: #ccc;
+    margin: 0 auto;
+}
+.sub-menu>li:hover {
+    color: white;
+    background-color: #aaa;
+}
+
+
+
+.right {
+    width: 800px;
+    height: 650px;
+}
+.slide{
+    width: 800px;
+    height: 350px;
+    overflow: hidden;
+}
+.contents {
+    width: 800px;
+    height: 200px;
+    display: flex;
+}
+.tab {
+    width: 34%;
+    height: 200px;
+}
+.tab h3 {
+    width: 100px;
+    height: 25px;
+    color: white;
+    display: inline-block;
+    background-color: #0551A6;
+    text-align: center;
+    border-radius: 5px 5px 0px 0px;
+}
+.tab-notice {
+    width: 100%;
+    height: 175px;
+    border: 1px solid black;
+}
+.tab-notice li {
+    width: 100%;
+    height: 25px;
+    margin-top: 5px;
+    font-size: 10pt;
+    border-bottom: 1px solid #aaa;
+}
+.tab-notice li:hover {
+    background-color: #ccc;
+}
+.tab-gallery {
+    width: 100%;
+    height: 175px;
+    border: 1px solid black;
+    display: none;
+}
+.tab-gallery ul {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+}
+.tab-gallery li {
+    width: 30%;
+    height: 75px;
+}
+.tab-gallery li:hover img {
+    scale: 1.05;
+}
+.tab-gallery img {
+    width: 100%;
+    height: 50px;
+    transition: 0.3s;
+}
+.tab-gallery p {
+    width: 100%;
+    height: 25px;
+    font-size: 11pt;
+    text-align: center;
+}
+.banner {
+    width: 33%;
+    height: 200px;
+}
+.banner {
+    width: 33%;
+    height: 200px;
+}
+.banner h3 {
+    width: 100px;
+    height: 25px;
+    color: white;
+    display: inline-block;
+    background-color: #0551A6;
+    text-align: center;
+    border-radius: 5px 5px 0px 0px;
+}
+.banner img {
+    width: 100%;
+    height: 175;
+}
+.shortcut h3 {
+    width: 100px;
+    height: 25px;
+    color: white;
+    display: inline-block;
+    background-color: #0551A6;
+    text-align: center;
+    border-radius: 5px 5px 0px 0px;
+}
+.shortcut {
+    width: 33%;
+    height: 200px;
+}
+.shortcut ul {
+    width: 100%;
+    height: 175px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.shortcut li{
+    width: 30%;
+    height: 100px;
+    padding-top: 5px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.shortcut li:hover {
+    scale: 1.05;
+}
+.shortcut img {
+    width: 60px;
+    height: 60px;
+}
+.shortcut p {
+    width: 100%;
+    height: 25px;
+}
+footer {
+    width: 800px;
+    height: 100px;
+    display: flex;
+    border: 1px solid black;
+}
+.logo2 {
+    width: 200px;
+    height: 100px;
+    padding-top: 30px;
+}
+.f-right {
+    width: 600px;
+    height: 100px;
+}
+.f-menu {
+    width: 600px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.f-menu li {
+    width: 150px;
+    height: 25px;
+    text-align: center;
+    border: 1px solid black;
+}
+.f-menu li:hover {
+    color: white;
+    background-color: #0551A6;
+}
+.copyright {
+    width: 600px;
+    height: 50px;
+    text-align: center;
+    padding-bottom: 5px;
+}
+.modal {
+    width: 600px;
+    height: 250px;
+    background-color: #ccc;
+    position: absolute;
+    top: 26%;
+    left: 15%;
+    text-align: center;
+    display: none;
+}
